@@ -1,5 +1,5 @@
 ---
-
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -10,6 +10,9 @@
     <meta name="generator" content={Astro.generator} />
     <title>Restuarant Website</title>
   </head>
+  <header>
+    <Navbar />
+  </header>
   <body>
     <h1>References</h1>
 
@@ -32,4 +35,5 @@
     <h2>Citations</h2>
     <p>Astro.js was the framework used to make the website.</p>
   </body>
+
 </html>
