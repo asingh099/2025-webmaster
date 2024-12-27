@@ -11,3 +11,4 @@ https://www.google.com/search?q=vegan+colors&sca_esv=12dd82caf9fb79d9&ei=eedTZ_y
 ### Development Process
 The development process consists of an iterative process of preliminary research, design, and development.
 
+Before working on the website, research on existing vegetarian and vegan restaurants was conducted.
