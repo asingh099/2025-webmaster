@@ -1,10 +1,12 @@
 ---
-import Page from "../layouts/Page.astro";
+import BlogCard from "../components/blog/BlogCard.astro";
+import BlogGrid from "../layouts/blog/BlogGrid.astro";
+import Page from "../layouts/shared/Page.astro";
 ---
 
-<Page>
+<Page title="Blog">
     <h1 class="text-2xl">Blog</h1>
-    <div>
-        
-    </div>
+    <BlogGrid>
+        <BlogCard title="" author="Jack Washnock">
+    </BlogGrid>
 </Page>
