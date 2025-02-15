@@ -2,8 +2,6 @@
 const { href, text } = Astro.props;
 ---
 
-<div class="px-6 py-3 rounded-xl text-white bg-indigo-600">
-    <a href={href}>
-        <p>{text}</p>  
-    </a>
-</div>
+<a class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white text-center font-medium px-5 py-2.5 rounded-lg" href={href}>
+    <p>{text}</p>  
+</a>
