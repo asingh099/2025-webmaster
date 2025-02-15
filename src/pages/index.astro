@@ -1,9 +1,12 @@
 ---
-import Page from "../layouts/Page.astro";
-import Hero from "../layouts/Hero.astro";
+import Hero from "../layouts/home/Hero.astro";
+import Page from "../layouts/shared/Page.astro";
+import SocialMediaCard from "../components/shared/SocialMediaCard.astro";
+import Testimonials from "../layouts/home/Testimonials.astro";
 ---
 
 <Page title="Home">
   <h1 class="text-2xl">Verdant</h1>
-  <Hero/>
+  <Hero />
+  <Testimonials />
 </Page>
