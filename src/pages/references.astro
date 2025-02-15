@@ -1,23 +1,23 @@
 ---
+import PdfCard from "../components/docs/PdfCard.astro";
 import Page from "../layouts/shared/Page.astro";
 ---
 
 <Page title="References">
     <h1 class="text-2xl font-bold">References</h1>
     <h2 class="text-xl font-semibold">Documentation</h2>
-    <h3 class="text-lg font-medium text-gray-700">Plan of Work Log</h3>
-    <p>[INSERT PLAN OF WORK LOG]</p>
-    <h3 class="text-lg font-medium text-gray-700">Student Copyright Checklist</h3>
-    <p>[INSERT STUDENT COPYRIGHT CHECKLIST]</p>
-    <h3 class="text-lg font-medium text-gray-700" id="bibliography">Bibliography</h3>
-    <p>[INSERT BIBLIOGRAPHY]</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <PdfCard heading="Plan of Work Log" file="/docs/plan-of-work-log.pdf" />
+        <PdfCard heading="Student Copyright Checklist" file="/docs/student-copyright-checklist.pdf" />
+        <PdfCard heading="Bibliography" file="/docs/bibliography.pdf" />
+    </div>
     <h2 class="text-xl font-semibold">References</h2>
     <h3 class="text-lg font-medium text-gray-700">Tools</h3>
     <p>The chosen frameworks used to develop this website are listed and attributed below.</p>
-    <li>
-        <ol>Astro.js</ol>
-        <ol>Tailwind CSS</ol>
-    </li>
+    <ol>
+        <li>Astro.js</li>
+        <li>Tailwind CSS</li>
+    </ol>
     <h3 class="text-lg font-medium text-gray-700">Assertion of Originality</h3>
     <p>I hereby assert that all contents of this website, Verdant, was solely created by the team unless specified otherwise under <a href="#bibliography">Bibliography</a>.</p>
 </Page>
