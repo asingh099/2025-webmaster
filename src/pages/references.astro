@@ -4,20 +4,52 @@ import Page from "../layouts/shared/Page.astro";
 ---
 
 <Page title="References">
-    <h1 class="text-2xl font-bold">References</h1>
-    <h2 class="text-xl font-semibold">Documentation</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <PdfCard heading="Plan of Work Log" file="/docs/plan-of-work-log.pdf" />
-        <PdfCard heading="Student Copyright Checklist" file="/docs/student-copyright-checklist.pdf" />
-        <PdfCard heading="Bibliography" file="/docs/bibliography.pdf" />
-    </div>
-    <h2 class="text-xl font-semibold">References</h2>
-    <h3 class="text-lg font-medium text-gray-700">Tools</h3>
-    <p>The chosen frameworks used to develop this website are listed and attributed below.</p>
-    <ol>
-        <li>Astro.js</li>
-        <li>Tailwind CSS</li>
-    </ol>
-    <h3 class="text-lg font-medium text-gray-700">Assertion of Originality</h3>
-    <p>I hereby assert that all contents of this website, Verdant, was solely created by the team unless specified otherwise under <a href="#bibliography">Bibliography</a>.</p>
+	<h1 class="text-2xl font-bold">References</h1>
+
+	<section class="p-12">
+		<h2 class="text-xl font-semibold">Documentation</h2>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+			<PdfCard heading="Plan of Work Log" file="/docs/plan-of-work-log.pdf" />
+			<PdfCard heading="Student Copyright Checklist" file="/docs/student-copyright-checklist.pdf" />
+			<PdfCard heading="Bibliography" file="/docs/bibliography.pdf" />
+		</div>
+	</section>
+
+	<section class="p-12">
+		<h2 class="text-xl font-semibold">References</h2>
+		<h3 class="mt-4 text-lg font-medium text-gray-700">Tools</h3>
+		<p>The chosen frameworks and software used to develop this website are listed and attributed below.</p>
+		<ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+			<li class="flex flex-row items-center bg-emerald-50 px-5 py-2.5 rounded-md">
+				<img width="48" height="48" src="https://icon.icepanel.io/Technology/png-shadow-512/Astro.png" alt="Astro's icon">
+				<div class="ms-6">
+					<h4 class="font-medium text-green-950">Astro</h4>
+					<p class="text-green-900">Created by Fred Schoot</p>
+				</div>
+			</li>
+			<li class="flex flex-row items-center bg-emerald-50 px-5 py-2.5 rounded-md">
+				<img width="48" height="48" src="https://cdn.prod.website-files.com/655b60964be1a1b36c746790/655b60964be1a1b36c746d41_646dfce3b9c4849f6e401bff_supabase-logo-icon_1.png" alt="Supabase's icon">
+				<div class="ms-6">
+					<h4 class="font-medium text-green-950">Supabase</h4>
+					<p class="text-green-900">Created by Paul Copplestone and Ant Wilson</p>
+				</div>
+			</li>
+			<li class="flex flex-row items-center bg-emerald-50 px-5 py-2.5 rounded-md">
+				<img width="48" height="48" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" alt="Tailwind CSS's icon">
+				<div class="ms-6">
+					<h4 class="font-medium text-green-950">Tailwind CSS</h4>
+					<p class="text-green-900">Created by Paul Copplestone and Ant Wilson</p>
+				</div>
+			</li>
+			<li class="flex flex-row items-center bg-emerald-50 px-5 py-2.5 rounded-md">
+				<img width="48" height="48" src="https://icon.icepanel.io/Technology/svg/TypeScript.svg" alt="TypeScript's icon">
+				<div class="ms-6">
+					<h4 class="font-medium text-green-950">TypeScript</h4>
+					<p class="text-green-900">Created by Paul Copplestone and Ant Wilson</p>
+				</div>
+			</li>
+		</ol>
+		<h3 class="mt-4 text-lg font-medium text-gray-700">Assertion of Originality</h3>
+		<p>I hereby assert that all contents of this website, Verdant, was solely created by the team unless specified otherwise under <a href="#bibliography">Bibliography</a>.</p>
+	</section>
 </Page>
