@@ -3,5 +3,53 @@ import Page from "../layouts/shared/Page.astro";
 ---
 
 <Page title="Sustainability">
-  <h1 class="text-2xl">Sustainability</h1>
+    <!-- Hero Section -->
+    <section class="relative bg-green-700 text-white text-center py-20">
+        <h1 class="text-5xl font-bold">Sustainability at Verdant</h1>
+        <p class="mt-4 text-lg">Committed to a greener future, one meal at a time.</p>
+    </section>
+    
+    <!-- Introduction Section -->
+    <section class="max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
+        <h2 class="text-3xl font-semibold text-green-700">Our Green Mission</h2>
+        <p class="mt-4 text-lg">Verdant is dedicated to sustainable practices, from sourcing local ingredients to reducing waste. We believe in protecting the planet through responsible business choices.</p>
+    </section>
+    
+    <!-- Sustainability Initiatives -->
+    <section class="max-w-6xl mx-auto p-8 mt-10">
+        <h2 class="text-3xl font-semibold text-green-700 text-center">Our Commitment to Sustainability</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6 text-center">
+            <div class="bg-white shadow-lg p-6 rounded-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-bold">Supporting Local Farms</h3>
+                <p class="mt-2 text-gray-600">We partner with 80+ local farms to source fresh, organic ingredients.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-bold">Eco-Friendly Packaging</h3>
+                <p class="mt-2 text-gray-600">All take-out packaging is made from 100% recycled materials.</p>
+            </div>
+            <div class="bg-white shadow-lg p-6 rounded-lg transform hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-bold">Zero-Waste Commitment</h3>
+                <p class="mt-2 text-gray-600">Leftovers are donated to food shelters to minimize waste.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Impact Section -->
+    <section class="max-w-6xl mx-auto p-8 mt-10 text-center">
+        <h2 class="text-3xl font-semibold text-green-700">Make an Impact</h2>
+        <p class="mt-4 text-lg text-gray-700">Click on an initiative to see how you can contribute.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-6">
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Plant Trees with Us</button>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Reduce Plastic Use</button>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Support Local Farmers</button>
+            <button class="bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Join Our Zero-Waste Program</button>
+        </div>
+    </section>
+    
+    <!-- Call-to-Action -->
+    <section class="text-center mt-16">
+        <h2 class="text-2xl font-bold">Join the Sustainability Movement</h2>
+        <p class="mt-2 text-lg">Together, we can make a difference for our planet.</p>
+        <a href="#" class="mt-4 inline-block bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Get Involved</a>
+    </section>
 </Page>
