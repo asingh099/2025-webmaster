@@ -4,7 +4,49 @@ import Page from "../layouts/shared/Page.astro";
 
 <Page title="Preparation">
   <div class="p-12">
-    <h1 class="text-2xl">Preparation Processes</h1>
-    <h3>Verdant believes in transparency about our preparation.</h3>
+      <!-- Hero Section -->
+      <section class="relative bg-green-600 text-white text-center py-20">
+          <h1 class="text-5xl font-bold">The Art of Fresh Preparation</h1>
+          <p class="mt-4 text-lg">From sourcing to plating, every step ensures flavor and quality.</p>
+      </section>
+      
+      <!-- Content Section -->
+      <section class="max-w-5xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
+          <h2 class="text-3xl font-semibold text-green-700">Quality & Safety Standards</h2>
+          <div class="mt-6 flex flex-col md:flex-row gap-6">
+              <img src="https://source.unsplash.com/600x400/?kitchen" alt="Kitchen" class="rounded-lg w-full md:w-1/2">
+              <p class="text-lg md:w-1/2">We adhere to the highest cleanliness and food safety standards, ensuring every ingredient is handled with care and precision.</p>
+          </div>
+      </section>
+      
+      <!-- Preparation Steps -->
+      <section class="max-w-5xl mx-auto p-8 mt-10">
+          <h2 class="text-3xl font-semibold text-green-700">Step-by-Step Preparation</h2>
+          <div class="grid md:grid-cols-4 gap-6 mt-6 text-center">
+              <div class="bg-white shadow-lg p-6 rounded-lg">
+                  <h3 class="text-xl font-bold">1. Washing & Inspecting</h3>
+                  <p class="mt-2 text-gray-600">All produce is carefully cleaned and checked for freshness.</p>
+              </div>
+              <div class="bg-white shadow-lg p-6 rounded-lg">
+                  <h3 class="text-xl font-bold">2. Cutting & Preparation</h3>
+                  <p class="mt-2 text-gray-600">Ingredients are expertly sliced and prepped for cooking.</p>
+              </div>
+              <div class="bg-white shadow-lg p-6 rounded-lg">
+                  <h3 class="text-xl font-bold">3. Cooking & Seasoning</h3>
+                  <p class="mt-2 text-gray-600">Dishes are cooked with carefully selected herbs and spices.</p>
+              </div>
+              <div class="bg-white shadow-lg p-6 rounded-lg">
+                  <h3 class="text-xl font-bold">4. Plating & Presentation</h3>
+                  <p class="mt-2 text-gray-600">Each dish is plated beautifully for a delightful experience.</p>
+              </div>
+          </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="text-center mt-16">
+          <h2 class="text-2xl font-bold">Experience the Freshness</h2>
+          <p class="mt-2 text-lg">Visit us and taste the difference that preparation makes.</p>
+          <a href="#" class="mt-4 inline-block bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">Explore Our Ingredients</a>
+      </section>
   </div>
 </Page>
