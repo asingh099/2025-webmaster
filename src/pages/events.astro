@@ -3,5 +3,55 @@ import Page from "../layouts/shared/Page.astro";
 ---
 
 <Page title="Events">
-    <h1 class="text-2xl">Events</h1>
+    <!-- Hero Section -->
+    <section class="relative bg-green-700 text-white text-center py-20">
+        <h1 class="text-5xl font-bold">Exciting Events at Verdant</h1>
+        <p class="mt-4 text-lg">Join us for unique experiences that bring our community together.</p>
+    </section>
+    
+    <!-- Events List -->
+    <section class="max-w-6xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-10">
+        <h2 class="text-3xl font-semibold text-green-700 text-center">Upcoming Events</h2>
+        <div class="grid md:grid-cols-2 gap-6 mt-6">
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🎂 Birthday Party</h3>
+                <p class="mt-2 text-gray-600">Celebrate your special day with plant-based treats and a cozy atmosphere.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🎮 Gaming Nights</h3>
+                <p class="mt-2 text-gray-600">Enjoy competitive and casual gaming while indulging in great food.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🎶 Live Music Performances</h3>
+                <p class="mt-2 text-gray-600">Experience local artists performing in an intimate and relaxing setting.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">😂 Comedy Night</h3>
+                <p class="mt-2 text-gray-600">Laugh the night away with stand-up performances from local comedians.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">👩‍🍳 Cooking Classes</h3>
+                <p class="mt-2 text-gray-600">Learn to prepare delicious plant-based meals with expert chefs.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🌍 Sustainability Sessions</h3>
+                <p class="mt-2 text-gray-600">Engage in discussions about eco-friendly practices and how you can contribute.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🍽️ Exclusive Food Tastings</h3>
+                <p class="mt-2 text-gray-600">Sample innovative dishes and give feedback on our experimental menu.</p>
+            </div>
+            <div class="bg-gray-50 shadow-md p-6 rounded-lg">
+                <h3 class="text-xl font-bold">🌱 Tree Planting with Staff</h3>
+                <p class="mt-2 text-gray-600">Join us in giving back to nature by planting trees together.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call-to-Action -->
+    <section class="text-center mt-16">
+        <h2 class="text-2xl font-bold">Be Part of the Experience</h2>
+        <p class="mt-2 text-lg">Reserve your spot at our next event!</p>
+        <a href="#" class="mt-4 inline-block bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700">View Full Calendar</a>
+    </section>
 </Page>
