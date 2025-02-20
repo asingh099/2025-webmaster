@@ -5,40 +5,32 @@ import Page from "../layouts/shared/Page.astro";
 ---
 
 <Page title="Blog">
-  <!-- Hero Section -->
-  <section
-    class="relative bg-blue-600 p-16 flex items-center justify-center text-center"
-  >
-    <div class="absolute inset-0 bg-black opacity-40"></div>
-    <!-- Dark overlay for readability -->
-    <h1 class="relative font-bold text-white text-5xl sm:text-6xl lg:text-7xl">
-      Our Latest Blog Posts
-    </h1>
-    <p class="relative text-white text-lg sm:text-xl mt-4">
-      Stay informed with the latest insights, tips, and updates from our blog.
-    </p>
-  </section>
-
-  <!-- Blog Section -->
-  <div class="bg-teal-50 py-12 px-6 sm:px-12">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <BlogGrid>
-          <BlogCard
-            title="Support Verdant, Support Animals"
-            summary="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-            author="Aaron Wedger"
-            lastUpdated="February 5, 2025"
-          />
-          <BlogCard
-            title="10 Benefits For Going Vegan"
-            summary="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
-            author="Jack Smith"
-            lastUpdated="February 1, 2025"
-          />
-          <!-- Add more BlogCard components as needed -->
-        </BlogGrid>
-      </div>
-    </div>
-  </div>
+	<!-- Hero Section -->
+	<section class="bg-gradient-to-r from-blue-500 to-teal-500 py-20">
+	  <div class="container mx-auto text-center text-white">
+		<h1 class="text-5xl font-extrabold leading-tight tracking-tight">Explore Our Latest Insights</h1>
+		<p class="mt-4 text-lg font-light">Dive into our blog for fresh perspectives, tips, and stories.</p>
+	  </div>
+	</section>
+  
+	<!-- Blog Section -->
+	<div class="bg-gray-50 py-20">
+	  <div class="container mx-auto px-4">
+		  <BlogGrid>
+			<BlogCard
+			  title="Support Verdant, Support Animals"
+			  summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet felis sit amet lorem bibendum."
+			  author="Aaron Wedger"
+			  lastUpdated="February 5, 2025"
+			/>
+			<BlogCard
+			  title="10 Benefits For Going Vegan"
+			  summary="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam imperdiet felis sit amet lorem bibendum."
+			  author="Jack Smith"
+			  lastUpdated="February 1, 2025"
+			/>
+			<!-- More BlogCards can go here -->
+		  </BlogGrid>
+	  </div>
+	</div>
 </Page>
