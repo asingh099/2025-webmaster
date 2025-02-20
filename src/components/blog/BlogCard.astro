@@ -1,9 +1,51 @@
 ---
-const { title, summary, author } = Astro.props;
+import Button from "../shared/Button.astro";
+
+const { title, summary, author, lastUpdated } = Astro.props;
 ---
 
-<div class="bg-slate-200 rounded-md">
-    <h2>{ title }</h2>
-    <h3>{ summary }</h3>
-    <h3>Authored by: { author }</h3>
-</div>
+<a
+  href="/"
+  target="_blank"
+  class="block hover:scale-105 transform transition duration-300 bg-white rounded-lg shadow-2xl overflow-hidden"
+>
+  <div class="relative w-full h-64">
+    <img
+      src="/images/blog/placeholder.webp"
+      alt="Placeholder image"
+      class="w-full h-full object-cover rounded-t-lg"
+    />
+  </div>
+  <div class="p-6 space-y-4">
+    <h2
+      class="text-3xl font-semibold text-gray-800 hover:text-teal-600 transition duration-200"
+    >
+      {title}
+    </h2>
+    <p class="text-lg text-gray-600">{summary}</p>
+
+    <!-- Blog Metadata Section -->
+    <div
+      class="flex justify-between items-center text-sm text-gray-500 space-x-2"
+    >
+      <div class="flex items-center">
+        <span class="font-medium">Authored by:</span>
+        <span class="ml-2 text-teal-500">{author}</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <span class="font-medium">Estimated read:</span>
+        <span class="text-teal-500">5 min</span>
+        <!-- Example read time -->
+      </div>
+    </div>
+
+    <!-- Date Updated Section -->
+    <div class="text-xs text-gray-400 mt-2">
+      <span
+        >Last updated: <span class="font-medium text-gray-600"
+          >{lastUpdated}</span
+        ></span
+      >
+    </div>
+  </div>
+</a>

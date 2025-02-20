@@ -3,13 +3,13 @@ const { image, name, role } = Astro.props;
 ---
 
 <div class="bg-emerald-100 p-5 rounded-md">
-	<slot />
-	<div class="flex flex-row items-center mt-4">
-		<!-- <img class="h-12 w-12" src=`${ image }` alt=`Profile picture of ${ name }`> -->
-		<div class="h-12 w-12 bg-slate-400 rounded-full"></div>
-		<div class="ms-4">
-			<h4 class="text-green-950 font-semibold">{ name }</h4>
-			<p class="text-green-900 text-sm font-medium">{ role }</p>
-		</div>
-	</div>
+  <slot />
+  <div class="flex flex-row items-center mt-4">
+    <!-- <img class="h-12 w-12" src=`${ image }` alt=`Profile picture of ${ name }`> -->
+    <div class="h-12 w-12 bg-slate-400 rounded-full"></div>
+    <div class="ms-4">
+      <h4 class="text-green-950 font-semibold">{name}</h4>
+      <p class="text-green-900 text-sm font-medium">{role}</p>
+    </div>
+  </div>
 </div>
